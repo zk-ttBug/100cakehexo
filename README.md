@@ -1,2 +1,2 @@
-# 100cakehexo
-100cakehexo
+# myHexo
+我的博客
