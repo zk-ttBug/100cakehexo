@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>日记博客 终于从windows 上 转战到 mac 上 | 100cake blog | 我们用心制作</title>
+  <meta name="author" content="100cake team">
+  
+  <meta name="description" content="用心制作糕点">
+  
+  
+
+  <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <meta property="og:title" content="日记博客 终于从windows 上 转战到 mac 上"/>
+  <meta property="og:site_name" content="100cake blog"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link href="/favicon.ico" rel="icon">
+  <link rel="alternate" href="/atom.xml" title="100cake blog" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+</head>
+
+
+<body>
+<div id="page" class="site">
+  <div id="primary" class="content-area">
+
+    <header id="header" class="inner"><div class="site-branding">
+  <h1 class="site-title">
+    <a href="/">100cake blog</a>
+  </h1>
+  <p class="site-description">我们用心制作</p>
+</div>
+<nav id="site-navigation" class="main-navigation" role="navigation">
+  <ul>
+    
+      <li><a href="/">主页</a></li>
+    
+      <li><a href="/archives">归档</a></li>
+    
+  </ul>
+</nav></header>
+
+    <article id="content" class="site-content">
+      <main id="main" class="site-main posts-loop" role="main">
+        <article class="post article">
+
+  
+  
+    <h3 class="article-title"><span>日记博客 终于从windows 上 转战到 mac 上</span></h3>
+  
+
+
+  <div class="article-top-meta">
+    <span class="posted-on">
+      <a href="/2015/03/01/daily1/" rel="bookmark">
+        <time class="entry-date published" datetime="2015-03-01T10:28:41.000Z">
+          Mar 1 2015
+        </time>
+      </a>
+    </span>
+  </div>
+
+
+  
+
+  <div class="article-content">
+    <div class="entry">
+      
+        <p>第一次开始博客编写，工作五年的老鸟了…</p>
+<h2 id="熟悉环境">熟悉环境</h2><p><code>各种环境迁移， 需要配置各种环境变量， 如java,maven,node... 熟悉各种命令，用最快速度适应开发</code></p>
+<h3 id="遇到的坑…">遇到的坑…</h3><p><code>运行 bash uae-pack.sh 时候一直报 maven compiler plugin 错误，后来发现 需要maven配置制定本地jdk目录地址</code><br><code>git clone Funtime 工程， 执行 grunt 的时候又发现各种奇葩问题， 结果发现是代码问题</code><br><code>不得不说  mac os 好牛B ...</code></p>
+<h3 id="配置博客">配置博客</h3><p><code>晚上配置博客时候，又遇到问题，安装 hexo 时候一直报</code></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gyp WARN EACCES user “root” does not have permission to access the dev dir “/Users/xiangwenwen/.node-gyp/<span class="number">0.10</span>.<span class="number">33</span>”</span><br></pre></td></tr></table></figure>
+<p><code>幸好有苏千的神贴，找到解决方案</code></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i fsevents --registry=http://registry.npm.taobao.org --disturl=http://npm.taobao.org/mirrors/node --loglevel=http</span><br></pre></td></tr></table></figure>
+<h3 id="总结">总结</h3><p><code>第一天来说 虽然遇到的问题比较多，但是总算解决了，终于可与愉快的撸码了，收获甚多！！ 嘿嘿！</code></p>
+
+      
+    </div>
+    <footer class="article-footer">
+        <div class="article-meta pull-left">
+          
+          
+        </div>
+        
+    </footer>
+  </div>
+</article>
+
+  
+	<div id="comment">
+	
+	
+	<!-- 多说评论框 start -->
+	 <div class="ds-thread" data-thread-key="/2015/03/01/daily1/" data-title="日记博客 终于从windows 上 转战到 mac 上" data-url="http://100cake.github.io/2015/03/01/daily1/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:""};
+	  (function() {
+	    var ds = document.createElement('script');
+	    ds.type = 'text/javascript';ds.async = true;
+	    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+	    ds.charset = 'UTF-8';
+	    (document.getElementsByTagName('head')[0] 
+	     || document.getElementsByTagName('body')[0]).appendChild(ds);
+	  })();
+	  </script>
+	<!-- 多说公共JS代码 end -->
+	
+	</div>
+
+
+
+
+      </main>
+    </article>
+
+    <footer id="colophon" class="site-footer" role="contentinfo"><p class="site-info">
+  Proudly powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and
+  Theme by <a href="https://github.com/CodeDaraW/Hacker" target="_blank">Hacker</a>
+  </br>
+  
+  &copy; 2016 100cake team
+  
+</p>
+</footer>
+    
+  </div>
+</div>
+</body>
+</html>

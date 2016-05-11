@@ -1,0 +1,176 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>如何做一次前端分享 | 100cake blog | 我们用心制作</title>
+  <meta name="author" content="100cake team">
+  
+  <meta name="description" content="用心制作糕点">
+  
+  
+
+  <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <meta property="og:title" content="如何做一次前端分享"/>
+  <meta property="og:site_name" content="100cake blog"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link href="/favicon.ico" rel="icon">
+  <link rel="alternate" href="/atom.xml" title="100cake blog" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+</head>
+
+
+<body>
+<div id="page" class="site">
+  <div id="primary" class="content-area">
+
+    <header id="header" class="inner"><div class="site-branding">
+  <h1 class="site-title">
+    <a href="/">100cake blog</a>
+  </h1>
+  <p class="site-description">我们用心制作</p>
+</div>
+<nav id="site-navigation" class="main-navigation" role="navigation">
+  <ul>
+    
+      <li><a href="/">主页</a></li>
+    
+      <li><a href="/archives">归档</a></li>
+    
+  </ul>
+</nav></header>
+
+    <article id="content" class="site-content">
+      <main id="main" class="site-main posts-loop" role="main">
+        <article class="post article">
+
+  
+  
+    <h3 class="article-title"><span>如何做一次前端分享</span></h3>
+  
+
+
+  <div class="article-top-meta">
+    <span class="posted-on">
+      <a href="/2016/02/20/20160220/" rel="bookmark">
+        <time class="entry-date published" datetime="2016-02-20T13:08:41.000Z">
+          Feb 20 2016
+        </time>
+      </a>
+    </span>
+  </div>
+
+
+  
+
+  <div class="article-content">
+    <div class="entry">
+      
+        <h1 id="背景">背景</h1><p>经过一个比较完整的项目周期，大家工作忙活过后都会做总结以及思考，此外我们更需要做的是分(zhuang)享(bi)！！！<br>然而在分享的时候，我们都会考虑如何做一个好的PPT，大概会有以下的需求：</p>
+<blockquote>
+<p>1.希望PPT能灵活的设置动画，出现的顺序；<br>2.希望最好能全屏播放；<br>3.希望最好有移动设备能控制PPT 前进后退；<br>4.分享后能生成PDF，能放在各种地方保存起来。</p>
+</blockquote>
+<h1 id="选型">选型</h1><p>因此我们选择了使用 “nodePPT” ！</p>
+<h1 id="安装">安装</h1><blockquote>
+<p>npm install nodeppt -g</p>
+</blockquote>
+<h1 id="使用">使用</h1><blockquote>
+<p>#获取帮助<br>nodeppt start -h</p>
+<p>#绑定端口<br>nodeppt start -p</p>
+</blockquote>
+<h1 id="theme_自定义">theme 自定义</h1><p>感觉默认的模板不符合新意？可以支持自定义模板，查看theme.moon</p>
+<p>自定义后的模板路径在markdown的设置里填写：</p>
+<blockquote>
+<p>title: 这是演讲的题目<br>speaker: 演讲者名字<br>url: 可以设置链接<br>transition: 转场效果，例如：zoomin/cards/slide<br>files: /css/theme.moon.css，尾部的文件<br>theme: moon //皮肤<br>highlightStyle: monokai_sublime //hljs的样式<br>headFiles: //头部的文件<br>usemathjax: //如果为yes，则引入mathjax，默认不建议开启，导出文件太多<br>date: 2015年12月20日<br>另外有：colors-moon-blue-dark-green-light 共六套自带皮肤可供选择</p>
+<p>theme: moon<br>or url?theme=moon</p>
+</blockquote>
+<h1 id="编写语法">编写语法</h1><ul>
+<li>支持markdown语法编写</li>
+<li>支持html语法编写</li>
+<li>支持iframe嵌入页面编写</li>
+</ul>
+<h1 id="转场动画">转场动画</h1><blockquote>
+<p>[slide data-on-build=”globalCallbackName”]</p>
+</blockquote>
+<h1 id="打印/导出ppt">打印/导出ppt</h1><h3 id="PDF版本">PDF版本</h3><p>这么高端大气上档次的ppt，怎么能不导出分享给大家呢？？</p>
+<p>使用url?print=1访问页面，然后选择chrome的系统打印即可</p>
+<h3 id="html版">html版</h3><blockquote>
+<p># 获取generate帮助<br>nodeppt generate -h</p>
+<p># 使用generate命令<br>nodeppt generate filepath</p>
+<p># 导出全部，包括nodeppt的js、img和css文件夹<br># 默认导出在publish文件夹<br>nodeppt generate ./ppts/demo.md -a</p>
+<p># 指定导出文件夹<br>nodeppt generate ./ppts/demo.md output/path -a</p>
+<p>导出目录下所有ppt，并且生成ppt list首页：<br>nodeppt path output/path -a</p>
+</blockquote>
+<h1 id="Demo">Demo</h1><p><a href="https://github.com/wurh/mynodeppt" title="rahul的PPT分享" target="_blank" rel="external">rahul的PPT分享</a><br><a href="http://qdemo.sinaapp.com/" title="在线demo" target="_blank" rel="external">在线demo</a></p>
+<h1 id="鸣谢">鸣谢</h1><p><a href="http://tympanus.net/Development/ItemTransitions/index2.html" target="_blank" rel="external">http://tympanus.net/Development/ItemTransitions/index2.html</a><br><a href="http://tympanus.net/Development/PageTransitions/" target="_blank" rel="external">http://tympanus.net/Development/PageTransitions/</a><br><a href="https://github.com/daneden/animate.css" target="_blank" rel="external">https://github.com/daneden/animate.css</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+        <div class="article-meta pull-left">
+          
+          
+  
+
+  <span class="post-tags">
+    <i class="icon-tags"></i>
+    <a href="/tags/ppt-分享-前端-node-js/">ppt 分享 前端 node.js</a>
+  </span>
+
+
+        </div>
+        
+    </footer>
+  </div>
+</article>
+
+  
+	<div id="comment">
+	
+	
+	<!-- 多说评论框 start -->
+	 <div class="ds-thread" data-thread-key="/2016/02/20/20160220/" data-title="如何做一次前端分享" data-url="http://100cake.github.io/2016/02/20/20160220/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:""};
+	  (function() {
+	    var ds = document.createElement('script');
+	    ds.type = 'text/javascript';ds.async = true;
+	    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+	    ds.charset = 'UTF-8';
+	    (document.getElementsByTagName('head')[0] 
+	     || document.getElementsByTagName('body')[0]).appendChild(ds);
+	  })();
+	  </script>
+	<!-- 多说公共JS代码 end -->
+	
+	</div>
+
+
+
+
+      </main>
+    </article>
+
+    <footer id="colophon" class="site-footer" role="contentinfo"><p class="site-info">
+  Proudly powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and
+  Theme by <a href="https://github.com/CodeDaraW/Hacker" target="_blank">Hacker</a>
+  </br>
+  
+  &copy; 2016 100cake team
+  
+</p>
+</footer>
+    
+  </div>
+</div>
+</body>
+</html>
