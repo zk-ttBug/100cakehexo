@@ -54,15 +54,15 @@
 
   
   
-    <h3 class="article-title"><a href="/2016/02/20/20160220/"><span>如何做一次前端分享</span></a></h3>
+    <h3 class="article-title"><a href="/2016/05/12/hello-world/"><span>Hello World</span></a></h3>
   
 
 
   <div class="article-top-meta">
     <span class="posted-on">
-      <a href="/2016/02/20/20160220/" rel="bookmark">
-        <time class="entry-date published" datetime="2016-02-20T13:08:41.000Z">
-          Feb 20 2016
+      <a href="/2016/05/12/hello-world/" rel="bookmark">
+        <time class="entry-date published" datetime="2016-05-12T06:08:26.737Z">
+          May 12 2016
         </time>
       </a>
     </span>
@@ -74,108 +74,15 @@
   <div class="article-content">
     <div class="entry">
       
-        <h1 id="背景">背景</h1><p>经过一个比较完整的项目周期，大家工作忙活过后都会做总结以及思考，此外我们更需要做的是分(zhuang)享(bi)！！！<br>然而在分享的时候，我们都会考虑如何做一个好的PPT，大概会有以下的需求：</p>
-<blockquote>
-<p>1.希望PPT能灵活的设置动画，出现的顺序；<br>2.希望最好能全屏播放；<br>3.希望最好有移动设备能控制PPT 前进后退；<br>4.分享后能生成PDF，能放在各种地方保存起来。</p>
-</blockquote>
-<h1 id="选型">选型</h1><p>因此我们选择了使用 “nodePPT” ！</p>
-<h1 id="安装">安装</h1><blockquote>
-<p>npm install nodeppt -g</p>
-</blockquote>
-<h1 id="使用">使用</h1><blockquote>
-<p>#获取帮助<br>nodeppt start -h</p>
-<p>#绑定端口<br>nodeppt start -p</p>
-</blockquote>
-<h1 id="theme_自定义">theme 自定义</h1><p>感觉默认的模板不符合新意？可以支持自定义模板，查看theme.moon</p>
-<p>自定义后的模板路径在markdown的设置里填写：</p>
-<blockquote>
-<p>title: 这是演讲的题目<br>speaker: 演讲者名字<br>url: 可以设置链接<br>transition: 转场效果，例如：zoomin/cards/slide<br>files: /css/theme.moon.css，尾部的文件<br>theme: moon //皮肤<br>highlightStyle: monokai_sublime //hljs的样式<br>headFiles: //头部的文件<br>usemathjax: //如果为yes，则引入mathjax，默认不建议开启，导出文件太多<br>date: 2015年12月20日<br>另外有：colors-moon-blue-dark-green-light 共六套自带皮肤可供选择</p>
-<p>theme: moon<br>or url?theme=moon</p>
-</blockquote>
-<h1 id="编写语法">编写语法</h1><ul>
-<li>支持markdown语法编写</li>
-<li>支持html语法编写</li>
-<li>支持iframe嵌入页面编写</li>
-</ul>
-<h1 id="转场动画">转场动画</h1><blockquote>
-<p>[slide data-on-build=”globalCallbackName”]</p>
-</blockquote>
-<h1 id="打印/导出ppt">打印/导出ppt</h1><h3 id="PDF版本">PDF版本</h3><p>这么高端大气上档次的ppt，怎么能不导出分享给大家呢？？</p>
-<p>使用url?print=1访问页面，然后选择chrome的系统打印即可</p>
-<h3 id="html版">html版</h3><blockquote>
-<p># 获取generate帮助<br>nodeppt generate -h</p>
-<p># 使用generate命令<br>nodeppt generate filepath</p>
-<p># 导出全部，包括nodeppt的js、img和css文件夹<br># 默认导出在publish文件夹<br>nodeppt generate ./ppts/demo.md -a</p>
-<p># 指定导出文件夹<br>nodeppt generate ./ppts/demo.md output/path -a</p>
-<p>导出目录下所有ppt，并且生成ppt list首页：<br>nodeppt path output/path -a</p>
-</blockquote>
-<h1 id="Demo">Demo</h1><p><a href="https://github.com/wurh/mynodeppt" title="rahul的PPT分享" target="_blank" rel="external">rahul的PPT分享</a><br><a href="http://qdemo.sinaapp.com/" title="在线demo" target="_blank" rel="external">在线demo</a></p>
-<h1 id="鸣谢">鸣谢</h1><p><a href="http://tympanus.net/Development/ItemTransitions/index2.html" target="_blank" rel="external">http://tympanus.net/Development/ItemTransitions/index2.html</a><br><a href="http://tympanus.net/Development/PageTransitions/" target="_blank" rel="external">http://tympanus.net/Development/PageTransitions/</a><br><a href="https://github.com/daneden/animate.css" target="_blank" rel="external">https://github.com/daneden/animate.css</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-        <div class="article-meta pull-left">
-          
-          
-  
-
-  <span class="post-tags">
-    <i class="icon-tags"></i>
-    <a href="/tags/ppt-分享-前端-node-js/">ppt 分享 前端 node.js</a>
-  </span>
-
-
-        </div>
-        
-        <div class="article-meta pull-right">
-          <span>
-            <i class="icon-comments"></i>
-            <span>
-              <a href="http://100cake.github.io/2016/02/20/20160220/#comment">评论</a>
-            </span>
-          </span>
-        </div>
-        
-    </footer>
-  </div>
-</article>
-
-
-
-  <article class="post article">
-
-  
-  
-    <h3 class="article-title"><a href="/2016/01/30/20160130/"><span>项目开荒记</span></a></h3>
-  
-
-
-  <div class="article-top-meta">
-    <span class="posted-on">
-      <a href="/2016/01/30/20160130/" rel="bookmark">
-        <time class="entry-date published" datetime="2016-01-30T01:08:41.000Z">
-          Jan 30 2016
-        </time>
-      </a>
-    </span>
-  </div>
-
-
-  
-
-  <div class="article-content">
-    <div class="entry">
-      
-        <h1 id="前言">前言</h1><p>今年10月份有幸加入到唯品会，到目前，我非常充实的度过了这3-4个月。。。</p>
-<h1 id="缘起">缘起</h1><p>来到了vip，首先我要做的项目是跨境电商的业务，主要是想把中国的产品卖到美国佬那里去，赚美国佬的钱;当初来之前就是因为知道我们要赚美国佬的钱，我带着满腔爱国情怀加入了…</p>
-<h1 id="加入">加入</h1><p>到了入职那天，走进了我们的项目组，我看见每位小伙伴都忙忙碌碌，基本上是连我要问的入职问题都还没来得及回答，就马上在沟通项目问题，后来开了一个简单的部门会议—算是项目启动会议;<br>当听到1月1日要4端全上线的消息后（pc,android,ios,ipad），压力山大…2个月左右的时间，4个端的上线….</p>
-<h1 id="开荒">开荒</h1><p>基本上还没来得及熟悉入职流程，我已经很快投身于项目工作中，经过了解项目情况后，心中顿时又感觉到无限的压力…<br>因项目紧急的情况，我们的整个架构优先是从一个第三方的开源框架进行二次开发，其次，也是最重点，前后端需要套模板，前后绑定…<br>此外，还需要搭建一个运营后台，也是需要前后套模板…</p>
-<p>此时，我已经能预料到后面的工作将会是多么的蛋疼，因此我上与项目组内的小伙伴沟通，坚决与后端同学交互不能通过套模板的方式进行，<br>必须提供API 数据接口， 此外运营后台必须前后分离，全走数据接口</p>
-<p><img src="http://ceojy.img47.wal8.com/img47/537002_20160205174451/145466550772.png" alt="alt text" title="当前架构"></p>
-<h1 id="大改造">大改造</h1><p>因此我们开始进行大改造！我们果断的使用了node.js, 主要完成前端工程化一系列的搭建<br>后端使用的是freemaker 模板，我们也在github上 找到了freemaker.js， 可以通过node的服务，生成freemaker模板<br><img src="http://ceojy.img47.wal8.com/img47/537002_20160205174451/145466731704.png" alt="alt text" title="工程架构"></p>
-<h1 id="完成上线">完成上线</h1><p>经过1.5个月的奋斗，我们的项目终于在巨大压力下诞生了，PC端，移动端 同时上线，另外客户端内嵌移动端页面也如期上线了;总算实现了4端齐上的一个奇迹！<br><img src="http://ceojy.img47.wal8.com/img47/537002_20160205174451/145472217657.png" alt="alt text" title="PC端-website"><br><img src="http://ceojy.img47.wal8.com/img47/537002_20160205174451/145472218673.png" alt="alt text" title="移动端-webapp"></p>
-<h1 id="未来">未来</h1><p>当然，这肯定还是远远不够的，未来我们还要围绕整个业务的运营效率，研发效率，业务质量以及各种指标进行这个项目的生态建设;让产品走向精品，让开荒时代过去，开创美好时代</p>
+        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
 
       
     </div>
@@ -189,216 +96,7 @@
           <span>
             <i class="icon-comments"></i>
             <span>
-              <a href="http://100cake.github.io/2016/01/30/20160130/#comment">评论</a>
-            </span>
-          </span>
-        </div>
-        
-    </footer>
-  </div>
-</article>
-
-
-
-  <article class="post article">
-
-  
-  
-    <h3 class="article-title"><a href="/2015/07/15/20150715/"><span>深JS大会参与感受</span></a></h3>
-  
-
-
-  <div class="article-top-meta">
-    <span class="posted-on">
-      <a href="/2015/07/15/20150715/" rel="bookmark">
-        <time class="entry-date published" datetime="2015-07-15T10:57:41.000Z">
-          Jul 15 2015
-        </time>
-      </a>
-    </span>
-  </div>
-
-
-  
-
-  <div class="article-content">
-    <div class="entry">
-      
-        <h1 id="深JS大会参与感受">深JS大会参与感受</h1><p>很荣幸今年7月11-12日参与深JS大会，回顾这次大会的分享内容，以及所看所闻，本次大会主要可以划分为以下这个主题</p>
-<p><code>前端可视化方面</code></p>
-<p><code>ReactJS 在前端中的实践与应用</code></p>
-<p><code>前端JS 与 硬件研发的链接</code></p>
-<p><code>NodeJS 在后端方面的使用</code></p>
-<p><code>前端与NodeJS 的测试实践以及性能调优</code></p>
-<p><code>前端服务化概念</code></p>
-<p>当然在这次深JS当中，我们也看到了不少前端行业的伙伴的讨论主题，大家主要也围绕<br>angularJS，emberJS，ReactJS，vueJS 这些MVVM的框架</p>
-<p>其中也有讲师提到过他在某知名企业的后台应用看到了js 演变史， 从extjs 到 kissy 到 backbone.js 到 augular.js 到目前的React.js;由此可看出Javascript 语言在这几年正在飞快地发展。</p>
-<p>当然在这2天中，我们有参与抽奖，有参与一起拼接机器人，以及研发硬件程序</p>
-<p>好了，现在上图！</p>
-<h2 id="Makeblock_的HR妹子以及工程师">Makeblock 的HR妹子以及工程师</h2><p><img src="http://7xawfk.com1.z0.glb.clouddn.com/shen1.png" alt="alt text" title="妹子与工程师"></p>
-<h2 id="Web_Audio_API_+_硬件_=_DISCO_嗨歌！">Web Audio API + 硬件 = DISCO 嗨歌！</h2><p><img src="http://7xawfk.com1.z0.glb.clouddn.com/shen2.png" alt="alt text" title="DISCO"></p>
-<h2 id="晚上参与的机器人极限拼装与编程">晚上参与的机器人极限拼装与编程</h2><p><img src="http://7xawfk.com1.z0.glb.clouddn.com/shen3.png" alt="alt text" title="有头猪！"></p>
-<h2 id="某互联网名企资深前端总结出来的">某互联网名企资深前端总结出来的</h2><p><img src="http://7xawfk.com1.z0.glb.clouddn.com/shen4.png" alt="alt text" title="干！"></p>
-<h2 id="这是所有前端工作者的心声么？">这是所有前端工作者的心声么？</h2><p><img src="http://7xawfk.com1.z0.glb.clouddn.com/shen5.png" alt="alt text" title="Javascript是全宇宙最好语言！"></p>
-<h2 id="最后就是我们小伙伴的集体照了！_YEAH！">最后就是我们小伙伴的集体照了！ YEAH！</h2><p><img src="http://7xawfk.com1.z0.glb.clouddn.com/shen6.png" alt="alt text" title="大合照！"></p>
-
-      
-    </div>
-    <footer class="article-footer">
-        <div class="article-meta pull-left">
-          
-          
-        </div>
-        
-        <div class="article-meta pull-right">
-          <span>
-            <i class="icon-comments"></i>
-            <span>
-              <a href="http://100cake.github.io/2015/07/15/20150715/#comment">评论</a>
-            </span>
-          </span>
-        </div>
-        
-    </footer>
-  </div>
-</article>
-
-
-
-  <article class="post article">
-
-  
-  
-    <h3 class="article-title"><a href="/2015/07/05/20150705/"><span>国际笑话性能优化经验</span></a></h3>
-  
-
-
-  <div class="article-top-meta">
-    <span class="posted-on">
-      <a href="/2015/07/05/20150705/" rel="bookmark">
-        <time class="entry-date published" datetime="2015-07-05T11:57:41.000Z">
-          Jul 5 2015
-        </time>
-      </a>
-    </span>
-  </div>
-
-
-  
-
-  <div class="article-content">
-    <div class="entry">
-      
-        <p><code>国际笑话 前端css inline 优化实践</code><br>站点地址： <a href="http://funtime.ucweb.com" target="_blank" rel="external">http://funtime.ucweb.com</a></p>
-<h2 id="一-_站点优化前">一. 站点优化前</h2><p><code>站点优化前逻辑。</code><br>　　<img src="http://7xawfk.com1.z0.glb.clouddn.com/m1.png" alt="alt text" title="站点优化前逻辑"></p>
-<p>   主文档  与  css 文件大小：</p>
-<p>   <img src="http://7xawfk.com1.z0.glb.clouddn.com/m2.png" alt="alt text" title="主文档与css大小"></p>
-<h2 id="二_优化方案：">二 优化方案：</h2><p><code>1、瘦身css 大小</code><br>   1）把css 里面 base64的图标 抽出来 合成 sprite（雪碧图）<br>   2）移除部分之前版本使用而当前版本不使用的css 样式</p>
-<p><img src="http://7xawfk.com1.z0.glb.clouddn.com/m3.png" alt="alt text" title="主文档与css大小"></p>
-<p><code>2、 进行css inlie</code><br>   1）把style.css 压缩后inline到主文档中</p>
-<p><img src="http://7xawfk.com1.z0.glb.clouddn.com/m4.png" alt="alt text" title="主文档大小"></p>
-<p><code>经过优化，目前的请求是：</code></p>
-<p><img src="http://7xawfk.com1.z0.glb.clouddn.com/m5.png" alt="alt text" title="主文档与js大小"></p>
-<h1 id="三_结果：">三 结果：</h1><p><img src="http://7xawfk.com1.z0.glb.clouddn.com/m6.png" alt="alt text" title="优化后逻辑"></p>
-<h1 id="四_结论：">四 结论：</h1><p><code>经过优化，我们介绍了css 的请求部分，把css inline到主文档，</code><br><code>在网络较差的环境下，适合当前方案的使用，当然后续可以通过scrat seo 的实现</code></p>
-
-      
-    </div>
-    <footer class="article-footer">
-        <div class="article-meta pull-left">
-          
-          
-        </div>
-        
-        <div class="article-meta pull-right">
-          <span>
-            <i class="icon-comments"></i>
-            <span>
-              <a href="http://100cake.github.io/2015/07/05/20150705/#comment">评论</a>
-            </span>
-          </span>
-        </div>
-        
-    </footer>
-  </div>
-</article>
-
-
-
-  <article class="post article">
-
-  
-  
-    <h3 class="article-title"><a href="/2015/04/30/20150430/"><span>Lua 基本语言语法</span></a></h3>
-  
-
-
-  <div class="article-top-meta">
-    <span class="posted-on">
-      <a href="/2015/04/30/20150430/" rel="bookmark">
-        <time class="entry-date published" datetime="2015-04-30T11:57:41.000Z">
-          Apr 30 2015
-        </time>
-      </a>
-    </span>
-  </div>
-
-
-  
-
-  <div class="article-content">
-    <div class="entry">
-      
-        <p><code>Lua 的语法比较简单，学习起来也比较省力，但功能却并不弱。在Lua中，一切都是变量，除了关键字。</code></p>
-<h2 id="一-_注释">一. 注释</h2><p>　　<code>在Lua中，你可以使用单行注释和多行注释。</code><br>　　<code>单行注释中，连续两个减号&quot;--&quot;表示注释的开始，一直延续到行末为止。相当于javascript中的&quot;//&quot;。</code><br>　　<code>多行注释中，由&quot;--[[&quot;表示注释开始，并且一直延续到&quot;]]&quot;为止。这种注释相当于javascript中的&quot;/*…*/&quot;。在注释当中，&quot;[[&quot;和&quot;]]&quot;是可以嵌套的。</code></p>
-<h2 id="二_编程语法">二 编程语法</h2><p>　　首先在Lua中，写一个这样的程序很简单：</p>
-<pre><code><span class="comment"><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">    　   print(<span class="string">"Hello world"</span>)</span><br></pre></td></tr></table></figure></span>
-</code></pre><p>　　在Lua中，语句之间可以用分号”；”隔开，也可以用空白隔开。一般来说，如果多个语句写在同一行的话，建议总是用分号隔开。<br>　　Lua 有好几种程序控制语句，如：</p>
-<p>　　条件控制：<code>if</code> 条件 <code>then … elseif</code> 条件 <code>then … else … end</code><br>　　While循环：<code>while</code> 条件 <code>do … end</code><br>　　Repeat循环：<code>repeat … until</code> 条件<br>　　For循环：<code>for</code> 变量 = 初值，终点值，步进 <code>do … end</code><br>　　For循环：<code>for</code> 变量1，变量2，… ，变量N in表或枚举函数 <code>do … end</code></p>
-<p>　　注意一下，for的循环变量总是只作用于for的局部变量，你也可以省略步进值，这时候，for循环会使用1作为步进值。<br>　　你可以用<code>break</code>来中止一个循环。</p>
-<p>　　．语句块<br>　　　　语句块在javascript中是用”{“和”}”括起来的，在Lua中，它是用do 和 end 括起来的。比如：<br>　　　　do print(“Hello”) end<br>　　　　你可以在 函数 中和 语句块 中定局部变量。</p>
-<p>　　．赋值语句<br>　　　　赋值语句在Lua被强化了。它可以同时给多个变量赋值。<br>　　　　例如：<br>　　　　a,b,c,d=1,2,3,4<br>　　　　甚至是：<br>　　　　a,b=b,a — 多么方便的交换变量功能啊。<br>　　　　在默认情况下，变量总是认为是全局的。假如你要定义局部变量，则在第一次赋值的时候，需要用local说明。比如：<br>　　　　local a,b,c = 1,2,3 — a,b,c都是局部变量</p>
-<p>　　．数值运算<br>　　　　和javascript一样，支持 +, -, *, /。但Lua还多了一个”^”。这表示指数乘方运算。比如2^3 结果为8, 2^4结果为16。<br>　　　　连接两个字符串，可以用”..”运处符。如：<br>　　　　“This a “ .. “string.” — 等于 “this a string”</p>
-<p>　　．比较运算<br>　　　　&lt; &gt; &lt;= &gt;= == ~=<br>　　　　分别表示 小于，大于，不大于，不小于，相等，不相等<br>　　　　所有这些操作符总是返回true或false。<br>　　　　对于Table，Function和Userdata类型的数据，只有 == 和 ~=可以用。相等表示两个变量引用的是同一个数据。比如：<br>　　　　a={1,2}<br>　　　　b=a<br>　　　　print(a==b, a~=b) — true, false<br>　　　　a={1,2}<br>　　　　b={1,2}<br>　　　　print(a==b, a~=b) — false, true</p>
-<p>　　．逻辑运算<br>　　　　and, or, not<br>　　　　其中，and 和 or 与javascript区别特别大。<br>　　　　在这里，请先记住，在Lua中，只有false和nil才计算为false，其它任何数据都计算为true，0也是true！<br>　　　　and 和 or的运算结果不是true和false，而是和它的两个操作数相关。<br>　　　　a and b：如果a为false，则返回a；否则返回b<br>　　　　a or b：如果 a 为true，则返回a；否则返回b</p>
-<p>　　　　举几个例子：<br>　　　　 print(4 and 5) —&gt; 5<br>　　　　 print(nil and 13) —&gt; nil<br>　　　　 print(false and 13) —&gt; false<br>　　　　 print(4 or 5) —&gt; 4<br>　　　　 print(false or 5) —&gt; 5</p>
-<p>　　　　在Lua中这是很有用的特性，也是比较令人混洧的特性。<br>　　　　我们可以模拟javascript中的语句：x = a? b : c，在Lua中，可以写成：x = a and b or c。<br>　　　　最有用的语句是： x = x or v，它相当于：if not x then x = v end 。</p>
-<p>　　．运算符优先级，从高到低顺序如下：<br>　　　　^<br>　　　　not - （一元运算）<br>　　　　 * /<br>　　　　 + -<br>　　　　 ..（字符串连接）<br>　　　　 &lt; &gt; &lt;= &gt;= ~= ==<br>　　　　 and<br>　　　　 or</p>
-<h2 id="三-_关键字">三. 关键字</h2><p>　　关键字是不能做为变量的。Lua的关键字不多，就以下几个：<br>　　and break do else elseif<br>　　end false for function if<br>　　in local nil not or<br>　　repeat return then true until　while</p>
-<h2 id="四-_变量类型">四. 变量类型</h2><p>　　怎么确定一个变量是什么类型的呢？大家可以用type()函数来检查。Lua支持的类型有以下几种：</p>
-<p>　　Nil 空值，所有没有使用过的变量，都是nil。nil既是值，又是类型。<br>　　Boolean 布尔值<br>　　Number 数值，在Lua里，数值相当于java的double<br>　　String 字符串，如果你愿意的话，字符串是可以包含’\0’字符的<br>　　Table 关系表类型，这个类型功能比较强大，我们在后面慢慢说。<br>　　Function 函数类型，不要怀疑，函数也是一种类型，也就是说，所有的函数，它本身就是一个变量。<br>　　Userdata 嗯，这个类型专门用来和Lua的宿主打交道的。宿主通常是用C和C++来编写的，在这种情况下，Userdata可以是宿主的任意数据类型，常用的有Struct和指针。<br>　　Thread　　 线程类型，在Lua中没有真正的线程。Lua中可以将一个函数分成几部份运行。如果感兴趣的话，可以去看看Lua的文档。</p>
-<h2 id="五-_变量的定义">五. 变量的定义</h2><p>　　所有的语言，都要用到变量。在Lua中，不管你在什么地方使用变量，都不需要声明，并且所有的这些变量总是全局变量，除非，你在前面加上”local”。<br>　　这一点要特别注意，因为你可能想在函数里使用局部变量，却忘了用local来说明。<br>　　至于变量名字，它是大小写相关的。也就是说，A和a是两个不同的变量。<br>　　定义一个变量的方法就是赋值。”＝”操作就是用来赋值的<br>　　我们一起来定义几种常用类型的变量吧。<br>　　A. Nil<br>　　　　正如前面所说的，没有使用过的变量的值，都是Nil。有时候我们也需要将一个变量清除，这时候，我们可以直接给变量赋以nil值。如：<br>　　　　var1=nil — 请注意 nil 一定要小写</p>
-<p>　　B. Boolean<br>　　　　布尔值通常是用在进行条件判断的时候。布尔值有两种：true 和 false。在Lua中，只有false和nil才被计算为false，而所有任何其它类型的值，都是true。比如0，空串等等，都是true。不要被C语言的习惯所误导，0在Lua中的的确确是true。你也可以直接给一个变量赋以Boolean类型的值，如：<br>　　　　varboolean = true</p>
-<p>　　C. Number<br>　　　　在Lua中，是没有整数类型的，也不需要。一般情况下，只要数值不是很大（比如不超过100,000,000,000,000），是不会产生舍入误差的。在很多CPU上，实数的运算并不比整数慢。<br>　　　　实数的表示方法，同C语言类似，如：<br>　　　　4 0.4 4.57e-3 0.3e12 5e+20</p>
-<p>　　D. String<br>　　　　字符串，总是一种非常常用的高级类型。在Lua中，你可以非常方便的定义很长很长的字符串。<br>　　　　字符串在Lua中有几种方法来表示，最通用的方法，是用双引号或单引号来括起一个字符串的，如：<br>　　　　“This is a string.”<br>　　　　和C语言相同的，它支持一些转义字符，列表如下：<br>　　　　\a bell<br>　　　　\b back space<br>　　　　\f form feed<br>　　　　\n newline<br>　　　　\r carriage return<br>　　　　\t horizontal tab<br>　　　　\v vertical tab<br>　　　　\ backslash<br>　　　　\” double quote<br>　　　　\’ single quote<br>　　　　[ left square bracket<br>　　　　] right square bracket</p>
-<p>　　　　由于这种字符串只能写在一行中，因此，不可避免的要用到转义字符。加入了转义字符的串，看起来实在是不敢恭维，比如：<br>　　　　“one line\nnext line\n\”in quotes\”, ‘in quotes’”<br>　　　　一大堆的”\”符号让人看起来很倒胃口。如果你与我有同感，那么，我们在Lua中，可以用另一种表示方法：用”[[“和”]]”将多行的字符串括起来，如：<br>　　　　page = [[<br>　　　　<html><br>　　　　　　<head><br>　　　　　　　　<title>An HTML Page</title><br>　　　　　　</head><br>　　　　　　<body><br>　　　　　　　　<a href="http://www.lua.org" target="_blank" rel="external">Lua</a><br>　　　　　　　　[[a text between double brackets]]<br>　　　　　　</body><br>　　　　</html><br>　　　　]]</p>
-<p>　　　　值得注意的是，在这种字符串中，如果含有单独使用的”[[“或”]]”就仍然得用”[“或”]“来避免歧义。当然，这种情况是极少会发生的。</p>
-<p>E. Table<br>　　　　关系表类型，这是一个很强大的类型。我们可以把这个类型看作是一个数组。只是C语言的数组，只能用正整数来作索引；在Lua中，你可以用任意类型来作数组的索引，除了nil。同样，在C语言中，数组的内容只允许一种类型；在Lua中，你也可以用任意类型的值来作数组的内容，除了nil。<br>　　　　Table的定义很简单，它的主要特征是用”{“和”}”来括起一系列数据元素的。比如：</p>
-<p>　　　　T1 = {} — 定义一个空表<br>　　　　T1[1]=10 — 然后我们就可以象C语言一样来使用它了。<br>　　　　T1[“John”]={Age=27, Gender=”Male”}<br>　　　　这一句相当于：<br>　　　　T1[“John”]={} — 必须先定义成一个表，还记得未定义的变量是nil类型吗<br>　　　　T1[“John”][“Age”]=27<br>　　　　T1[“John”][“Gender”]=”Male”<br>　　　　当表的索引是字符串的时候，我们可以简写成：<br>　　　　T1.John={}<br>　　　　T1.John.Age=27<br>　　　　T1.John.Gender=”Male”<br>　　　　或<br>　　　　T1.John{Age=27, Gender=”Male”}<br>　　　　这是一个很强的特性。</p>
-<p>　　　　在定义表的时候，我们可以把所有的数据内容一起写在”{“和”}”之间，这样子是非常方便，而且很好看。比如，前面的T1的定义，我们可以这么写：</p>
-<p>　　　　T1=<br>　　　　{<br>　　　　　　10, — 相当于 [1] = 10<br>　　　　　　[100] = 40,<br>　　　　　　John= — 如果你原意，你还可以写成：[“John”] =<br>　　　　　　{<br>　　　　　　　　Age=27, — 如果你原意，你还可以写成：[“Age”] =27<br>　　　　　　　　Gender=Male — 如果你原意，你还可以写成：[“Gender”] =Male<br>　　　　　　},<br>　　　　　　20 — 相当于 [2] = 20<br>　　　　}</p>
-<p>　　　　看起来很漂亮，不是吗？我们在写的时候，需要注意三点：<br>　　　　第一，所有元素之间，总是用逗号”，”隔开；<br>　　　　第二，所有索引值都需要用”[“和”]”括起来；如果是字符串，还可以去掉引号和中括号；<br>　　　　第三，如果不写索引，则索引就会被认为是数字，并按顺序自动从1往后编；</p>
-<p>　　　　表类型的构造是如此的方便，以致于常常被人用来代替配置文件。是的，不用怀疑，它比ini文件要漂亮，并且强大的多。</p>
-<p>　　F. Function<br>　　　　函数，在Lua中，函数的定义也很简单。典型的定义如下：<br>　　　　function add(a,b) — add 是函数名字，a和b是参数名字<br>　　　　 return a+b — return 用来返回函数的运行结果<br>　　　　end</p>
-<p>　　　　请注意，return语言一定要写在end之前。假如你非要在中间放上一句return，那么请写成：do return end。<br>　　　　还记得前面说过，函数也是变量类型吗？上面的函数定义，其实相当于：<br>　　　　add = function (a,b) return a+b end<br>　　　　当你重新给add赋值时，它就不再表示这个函数了。你甚至可以赋给add任意数据，包括nil （这样，你就清除了add变量）。Function是不是很象C语言的函数指针呢？</p>
-<p>　　　　和C语言一样，Lua的函数可以接受可变参数个数，它同样是用”…”来定义的，比如：<br>　　　　function sum (a,b,…)<br>　　　　如果想取得…所代表的参数，可以在函数中访问arg局部变量（表类型）得到。<br>　　　　如 sum(1,2,3,4)<br>　　　　则，在函数中，a = 1, b = 2, arg = {3, 4}<br>　　　　更可贵的是，它可以同时返回多个结果，比如：<br>　　　　function s()<br>　　　　　　return 1,2,3,4<br>　　　　end<br>　　　　a,b,c,d = s() — 此时，a = 1, b = 2, c = 3, d = 4<br>前面说过，表类型可以拥有任意类型的值，包括函数！因此，有一个很强大的特性是，拥有函数的表，哦，我想更恰当的应该说是对象吧。Lua可以使用面向对象编程了。不信？那我举例如下：</p>
-<p>　　　　t =<br>　　　　{<br>　　　　 Age = 27<br>　　　　 add = function(self, n) self.Age = self.Age+n end<br>　　　　}<br>　　　　print(t.Age) — 27<br>　　　　t.add(t, 10)<br>　　　　print(t.Age) — 37</p>
-<p>　　　　不过，t.add(t,10) 这一句实在是有点土对吧？没关系，在Lua中，你可以简写成：<br>　　　　t:add(10) — 相当于 t.add(t,10)</p>
-<p>　　G. Userdata 和 Thread<br>　　　　这两个类型的话题，超出了本文的内容，就不打算细说了。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-        <div class="article-meta pull-left">
-          
-          
-        </div>
-        
-        <div class="article-meta pull-right">
-          <span>
-            <i class="icon-comments"></i>
-            <span>
-              <a href="http://100cake.github.io/2015/04/30/20150430/#comment">评论</a>
+              <a href="http://100cake.github.io/2016/05/12/hello-world/#comment">评论</a>
             </span>
           </span>
         </div>
@@ -412,8 +110,6 @@
 
 <nav class="pagination">
   
-  
-  <a href="/page/2/" class="pagination-next">下一页</a>
   
 </nav>
       </main>
